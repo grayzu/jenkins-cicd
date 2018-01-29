@@ -89,7 +89,7 @@
     }
   },
   "variables": {
-      "_artifactsLocation": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/jenkins-cicd-vmss/"
+      "_artifactsLocation": "https://raw.githubusercontent.com/grayzu/jenkins-cicd/master/vmss/"
   },
   "resources": [
     {
