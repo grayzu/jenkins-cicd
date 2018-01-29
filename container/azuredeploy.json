@@ -172,7 +172,7 @@
       "acrName": "[parameters('acrName')]",
       "virtualNetworkName": "virtual-network",
       "subnetName": "default-subnet",
-      "_artifactsLocation": "https://github.com/grayzu/jenkins-cicd/blob/master/container/",
+      "_artifactsLocation": "https://raw.githubusercontent.com/grayzu/jenkins-cicd/master/container/",
       "_artifactsLocationSasToken": ""
     },
     "resources": [

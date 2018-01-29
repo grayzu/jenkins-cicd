@@ -36,7 +36,7 @@
   }],
   "provisioners": [{
     "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
-    "script": "./jenkins-cicd-vmss/scripts/packer/script.sh",
+    "script": "./vmss/scripts/packer/script.sh",
     "environment_vars": [
         "repository_url={{user `repository_url`}}",
         "oms_workspace_id={{user `oms_workspace_id`}}",

@@ -52,7 +52,7 @@ az logout
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
       <command>echo &quot;MyBuild: Build image&quot;
-/usr/bin/packer build &quot;${WORKSPACE}/jenkins-cicd-vmss/scripts/packer/ubuntu.json&quot;
+/usr/bin/packer build &quot;${WORKSPACE}/vmss/scripts/packer/ubuntu.json&quot;
 </command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
@@ -62,7 +62,7 @@ az logout
 fi
 
 echo &quot;MyBuild: Provision VMSS with packer image&quot;
-cd &quot;${WORKSPACE}/jenkins-cicd-vmss/scripts/terraform&quot;
+cd &quot;${WORKSPACE}/vmss/scripts/terraform&quot;
 /usr/bin/terraform get
 /usr/bin/terraform init
 /usr/bin/terraform apply -auto-approve -var &quot;location=${ARM_LOCATION}&quot; -var &quot;resource_group_name=${ARM_RESOURCE_GROUP}&quot; -var &quot;image_resource_group_name=${ARM_IMAGE_RESOURCE_GROUP}&quot; -var &quot;image_name=${ARM_IMAGE_NAME}&quot; -var &quot;admin_username=${VMAdminUsername}&quot; -var &quot;admin_password=${VMAdminPassword}&quot;

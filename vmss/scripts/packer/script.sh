@@ -31,7 +31,7 @@ then
 
     # Deploy code to ROOT
     rm -rf /opt/tomcat/webapps/ROOT/*
-    cp -r /tmp/azure-quickstart-templates/jenkins-cicd-vmss/HelloWorld/WebContent/* /opt/tomcat/webapps/ROOT
+    cp -r /vmss/HelloWorld/WebContent/* /opt/tomcat/webapps/ROOT
 else
     echo 'ERROR: Repository URL is not provided'
 fi
