@@ -162,7 +162,7 @@
         "metadata": {
           "description": "URL to a public git repository that includes a Dockerfile."
         },
-        "defaultValue": "https://github.com/Azure/azure-quickstart-templates"
+        "defaultValue": "https://github.com/grayzu/jenkins-cicd"
       }
     },
     "variables": {
