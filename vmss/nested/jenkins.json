@@ -100,7 +100,7 @@
     "vNetAddressPrefixes": "10.0.0.0/16",
     "sNetAddressPrefixes": "10.0.0.0/24",
     "vmPrivateIP": "10.0.0.5",
-    "vmImageName": "myPackerLinuxImage",
+    "vmImageName": "webAppImage",
     "_extensionScript": "setup.sh",
     "_artifactsLocationSasToken": ""
   },

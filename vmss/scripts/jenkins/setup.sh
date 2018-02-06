@@ -52,7 +52,7 @@ function ms_run_util_script() {
 jenkins_url="http://localhost:8080/"
 jenkins_username="admin"
 jenkins_password=""
-image="myPackerLinuxImage"
+image="webAppImage"
 job_short_name="BuildVM"
 credential_id="vmCred"
 credential_description="VM credential"
