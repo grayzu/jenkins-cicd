@@ -4,11 +4,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style>
+	.H1 {
+		font-size: 4em;
+		background-color: darkolivegreen;
+		height: 10em;
+		text-align: center;
+		display: flex;
+  		align-items: center
+	}
+</style>
 <title>Hello world</title>
 </head>
 <body>
 	<%
-		out.print("<p>Hello World!</p>");  
+		out.print("<H1>Hello World!</H1>");  
 	%>
 </body>
 </html>
