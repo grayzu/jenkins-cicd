@@ -20,7 +20,7 @@ mongoClient.connect(mongoDBUri, function (err, client) {
  
         requests.count(function(error, count){
             res.writeHead(200, { 'Content-Type': 'text/plain' });
-            res.end(`Hello World!\nThere are ${count} request records.`);
+            res.end(`Hello World! \nThere are ${count} request records.`);
         })
 
         requests.insertOne({
