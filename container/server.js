@@ -19,19 +19,8 @@ mongoClient.connect(mongoDBUri, function (err, client) {
         const requests = db.collection('requests');
  
         requests.count(function(error, count){
-            response.writeHead(200, {"Content-Type": "text/html"});
-            response.write('<!DOCTYPE "html">');
-            response.write("<html>");
-            response.write("<head>");
-            response.write("<title>Hello World Page</title>");
-            response.write("<style> .H1 {font-size: 4em;background-color: darkolivegreen;height: 10em;text-align: center;display: flex;align-items: center}</style>");
-            response.write("</head>");
-            response.write("<body>");
-            response.write("Hello World!\nThere are ${count} request records.");
-            response.write("</body>");
-            response.write("</html>");
-            response.end();
-            res.end();
+            res.writeHead(200, { 'Content-Type': 'text/plain' });
+            res.end(`Hello World!\nThere are ${count} request records.`);
         })
 
         requests.insertOne({
